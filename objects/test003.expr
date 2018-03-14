@@ -1,0 +1,32 @@
+obj1 := {
+    val prop1 := read(),
+    fun method1() begin
+        write(2)
+    end
+}
+
+obj2 := {
+    val prop1 := read(),
+    fun method1(a, b) begin
+        this.prop1 := read()
+        write(obj1.prop1)
+        obj1.prop1 := read()
+        write(obj1.prop1)
+        obj1.tt()
+    end,
+    fun method2(a, b) begin
+        write(obj1.prop1)
+        write(a * b)
+        write(this.prop1)
+        this.method1(a, b)
+    end
+};
+
+a := read()
+b := read()
+c := read()
+d := read()
+
+obj2.method2(a, b)
+obj2.method2(c, d)
+write(obj1.prop1)

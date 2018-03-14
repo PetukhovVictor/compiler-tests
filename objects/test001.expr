@@ -1,0 +1,10 @@
+rabbit := {
+    val weight := read(),
+    val growth := read(),
+    val name := "Ralph"
+}
+
+write(rabbit.weight)
+write(rabbit.growth)
+write(strlen(rabbit.name))
+write(strget(rabbit.name, 0))

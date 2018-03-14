@@ -1,0 +1,20 @@
+obj := {
+    val prop1 := read(),
+    val prop2 := read(),
+    fun method1(x, y) begin
+        write(x * y);
+        write(this.prop1);
+        this.prop1 := x * y;
+        write(this.prop1);
+        this.prop1 := this.prop1 + 1;
+        this.prop2 := this.prop1 * 3;
+        write(this.prop1);
+        return this.prop1
+    end
+}
+
+write(obj.method1(10, 5));
+write(obj.prop1)
+write(obj.prop2)
+obj.prop2 := 900
+write(obj.prop2)
