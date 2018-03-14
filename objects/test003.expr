@@ -12,7 +12,7 @@ obj2 := {
         write(obj1.prop1)
         obj1.prop1 := read()
         write(obj1.prop1)
-        obj1.tt()
+        obj1.method1()
     end,
     fun method2(a, b) begin
         write(obj1.prop1)
