@@ -1,16 +1,14 @@
 # Репозиторий с тестами для учебного компилятора
-[Пример репозитория с компилятором](https://github.com/anlun/compiler-example) |
-[Дополнительные материалы](https://drive.google.com/drive/folders/0B3UPtzTx9FB1YWlkNS1yWndXcXc?usp=sharing) |
-[Результаты](https://docs.google.com/spreadsheets/d/1JzJuaO3GWcG0kCF9-eTzIfCDAGbxy5nHtW3UxFWsK9Y/edit?usp=sharing)
 
-_В табличку 'Результаты' нужно записаться до 13 марта._
+В этот форк добавлены тесты на объекты, реализованный в [данном](https://github.com/PetukhovVictor/compiler) компиляторе.
 
 ## Структура репозитория
 - `core` - небольшой набор тестов, в котором есть (или будет) хотя бы по одному тесту
   на все необходимые к реализации части реализуемого языка;
 - `expressions` и `deep-expressions` - много тестов на базовое подмножество языка
   (арифметические выражения + ввод / вывод);
-- `performance` - пара тестов на сравнение эффективности компилятора с gcc.
+- `performance` - пара тестов на сравнение эффективности компилятора с gcc;
+- `objects` - тесты на объекты (свойства, методы).
 
 В папках `core`, `expressions` и `deep-expressions` есть пачка тестов (`*.expr`),
 входы для тестов (`*.input`), эталонные выводы (`orig/*.log`) и `Makefile`.
